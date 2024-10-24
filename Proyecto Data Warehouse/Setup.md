@@ -15,59 +15,21 @@ Selecciona la versión de Ruby que deseas instalar.
 Ejecuta el instalador y sigue las instrucciones del asistente de instalación.
 Una vez completada la instalación, abre la línea de comandos de Windows (cmd.exe) y escribe ruby -v para verificar que la instalación se haya realizado correctamente.
 
-## How to set up the database:
-
-Download <a href="https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks-oltp-install-script.zip">Adventure Works 2014 OLTP Script.</a>
-
-Luego ejecuta en la consola de windows el siguiente codigo para pasar de CSV a tablas: 
-
-<pre id="codeBlock">
-<code>
-ruby update_csvs.rb
-</code>
-</pre>
-
-Create the database and tables, import the data, and set up the views and keys with:
-
-<pre style="margin: 0;">
-<code>
-psql -c "CREATE DATABASE \"Adventureworks\";"
-psql -d Adventureworks < install.sql
-</code>
-</pre>
-
-
-(If you do not have a database created for your user account then you may need to also add: -U postgres to the above two commands.)
-
-All 68 tables are properly set up, and 11 of the 20 views are established. The ones not built are those that rely on XML functions like value and ref. To see a list of tables, open psql, and then connect to the database and show all the tables with these two commands:
-
-<pre id="codeBlock">
-<code>
-\c "Adventureworks"
-</code>
-</pre>
-
-<pre id="codeBlock">
-<code>
-\dt (humanresources|person|production|purchasing|sales).*
-</code>
-</pre>
-
-<pre id="codeBlock">
-<code>
-psql -c "CREATE DATABASE \"Adventureworks\";" -U postgres -h localhost
-</code>
-</pre>
+## Como instalar la base de datos de pruebas:
 
 ### Descarga y configuración de la base de datos AdventureWorks
 Descarga el repositorio en https://github.com/lorint/AdventureWorks-for-Postgres
-Ejecuta el siguiente comando de Git:
+o en: 
+Download <a href="https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks-oltp-install-script.zip">Adventure Works 2014 OLTP Script.</a>
 
+#### Configuracion de las tablas
+Ejecuta en consola el siguiente comando de Git para descargar la configuracion de las tablas:
+<pre id="codeBlock">
+<code>
 git clone https://github.com/lorint/AdventureWorks-for-Postgres.git
+</code>
+</pre>
 
-Este repositorio contiene los archivos para crear las tablas y vistas de la base de datos.
-
-Descarga Adventure Works 2014 OLTP Script.
 Contiene los archivos para llenar las tablas de la base de datos.
 
 ### Copia y pega el archivo AdventureWorks-oltp-install-script.zip en el directorio AdventureWorks-for-Postgres.
