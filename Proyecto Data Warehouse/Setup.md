@@ -55,3 +55,66 @@ All 68 tables are properly set up, and 11 of the 20 views are established. The o
 psql -c "CREATE DATABASE \"Adventureworks\";" -U postgres -h localhost
 </code>
 </pre>
+
+### Descarga y configuración de la base de datos AdventureWorks
+Descarga el repositorio en https://github.com/lorint/AdventureWorks-for-Postgres
+Ejecuta el siguiente comando de Git:
+
+git clone https://github.com/lorint/AdventureWorks-for-Postgres.git
+
+Este repositorio contiene los archivos para crear las tablas y vistas de la base de datos.
+
+Descarga Adventure Works 2014 OLTP Script.
+Contiene los archivos para llenar las tablas de la base de datos.
+
+### Copia y pega el archivo AdventureWorks-oltp-install-script.zip en el directorio AdventureWorks-for-Postgres.
+
+En tu terminal úbicate en el directorio AdventureWorks-for-Postgres y descomprime AdventureWorks-oltp-install-script.zip:
+
+cd AdventureWorks-for-Postgres/
+unzip AdventureWorks-oltp-install-script.zip 
+#### Probablemente no funcione en cmd de windows este comando, pruba descomprimiendo los csv's a mano. 
+
+En la terminal, ubicándote en el directorio AdventureWorks-for-Postgres, ejecuta el siguiente comando para convertir los archivos csv:
+
+ruby update_csvs.rb
+
+Activa la conexión con postgresql:
+
+sudo service postgresql start
+
+#### o si no funciona como en mi caso (windows 11)
+Abrir el Administrador de Servicios:
+Presiona Win + R, escribe services.msc y presiona Enter.
+Buscar el servicio de PostgreSQL:
+En la lista de servicios, busca algo como postgresql-x64-<version>.
+#### Iniciar el servicio:
+Haz clic derecho sobre el servicio y selecciona “Iniciar”.
+
+Crea la base de datos con el siguiente comando de PostgreSQL:
+
+psql -c "CREATE DATABASE \"Adventureworks\";" -U postgres -h localhost
+
+Ejecuta el script que llena las tablas de la base de datos:
+
+psql -d Adventureworks < install.sql -U postgres -h localhost
+
+
+### Conecta tu base de datos en DBeaver o pgAdmin.
+
+Abre DBeaver o pgAdmin.
+
+Selecciona la opción para crear una nueva conexión.
+
+Selecciona PostgreSQL en la lista de bases de datos.
+
+Ingresa la información de conexión necesaria en la pestaña.
+
+Host: localhost
+Port: 5432
+Base de datos: Adventureworks
+Nombre de usuario: postgres
+Password: la que tengas de tu user de postgresql.
+
+
+
