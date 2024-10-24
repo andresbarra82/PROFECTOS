@@ -1,26 +1,29 @@
-### Para mostrar las habilidades de modelado vamos a comenzar con una base de pruebas. Adventure Works
+### Para mostrar las habilidades de modelado vamos a comenzar con una base de pruebas. 
+Adventure Works
 
 #### Instalacion paso a paso para Windows 11: 
 
-Instalación de Postgre
+### Instalación de Postgre
 
-Instalacion de Ruby
+Vamos a instalar PostgreSQL en nuestra computadora. A continuación veremos el paso a paso y algunos consejos útiles para instalar y configurar correctamente PostgreSQL en nuestro equipo. En éste caso, usaremos Windows, pero los pasos son bastante similares entre los diferentes sistemas operativos.
 
+Primer paso: ir a https://www.postgresql.org/.
 
-How to set up the database:
-Download Adventure Works 2014 OLTP Script.
+### Instalacion de Ruby en Windows
+Descarga el instalador de Ruby desde la página oficial de Ruby para Windows: https://rubyinstaller.org/downloads/
+Selecciona la versión de Ruby que deseas instalar.
+Ejecuta el instalador y sigue las instrucciones del asistente de instalación.
+Una vez completada la instalación, abre la línea de comandos de Windows (cmd.exe) y escribe ruby -v para verificar que la instalación se haya realizado correctamente.
 
-Extract the .zip and copy all of the CSV files into the same folder, also containing update_csvs.rb file and install.sql.
+## How to set up the database:
 
-Modify the CSVs to work with Postgres by running:
+Download <a href="https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks-oltp-install-script.zip">Adventure Works 2014 OLTP Script.</a>
 
-<div>
-  <button onclick="copyCode()">Copiar código</button>
-</div>
+Luego ejecuta en la consola de windows el siguiente codigo para pasar de CSV a tablas: 
 
 <pre id="codeBlock">
 <code>
-`ruby update_csvs.rb`
+ruby update_csvs.rb
 </code>
 </pre>
 
