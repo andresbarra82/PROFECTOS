@@ -5,6 +5,9 @@ para traernos el ID y en el caso de que vengan en nulo le ponga un "-1" como val
 
 ![image](https://github.com/user-attachments/assets/7ce0953a-07c6-49ea-9a55-512d9582877b)
 
+Se buscan los registros que vienen del transaccional, los cruzamos con el dimensional y los registros que sean nuevos les asignaremos un id nuevo
+y los registros que ya existan le vamos a asignar el mismo id
+
 
 
 
