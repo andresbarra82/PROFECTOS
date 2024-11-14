@@ -33,3 +33,18 @@ Luego se crea una constante nueva para ver cuando no se cumple la condicion
 
 ![image](https://github.com/user-attachments/assets/ee6269a0-887a-4b2a-8b12-53a32700043f)
 
+Si no se cumple esa condicion entonces le va a asignar el mismo id que ya tiene
+
+![image](https://github.com/user-attachments/assets/f900917a-d8ee-4cbd-bbcb-cd61b48c47b7)
+
+Le decimos  a al nueva contante que tome el valor de max_cliente_id del id_cliente
+
+![image](https://github.com/user-attachments/assets/d9c28715-e8d4-4888-a725-766d8510658b)
+
+Luego se le agrega una variable positiva cuando el registro que ingresa si es nuevo:
+
+se utiliza el metodo para que comienze el incremental: ${Max_registro}
+
+![image](https://github.com/user-attachments/assets/aa476d0d-8869-4c53-8306-1747bc53ea9c)
+
+
