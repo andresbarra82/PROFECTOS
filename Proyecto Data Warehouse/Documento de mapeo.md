@@ -22,9 +22,9 @@ Luego agregamos una constante para identificar si es un valor nuevo que hay que 
 ![image](https://github.com/user-attachments/assets/9a3dd4ea-4ab2-4f99-baca-954deff240c9)
 
 Luego setear el valor de la contante con set field value:
-- Field name: id_cliente, Replace by value from field: indicador_insert_update
+- Field name: indicador_insert_update id_cliente, Replace by value from field: id_cliente
 
-![image](https://github.com/user-attachments/assets/8141a301-0d8e-4093-9932-b7472c6a9c83)
+![image](https://github.com/user-attachments/assets/06e15f81-d710-477a-bbc6-42da19fda421)
 
 
 Luego agregar un filtro, si el valor el id es -1
@@ -50,3 +50,6 @@ se utiliza el metodo para que comienze el incremental: ${Max_registro}
 ![image](https://github.com/user-attachments/assets/aa476d0d-8869-4c53-8306-1747bc53ea9c)
 
 
+Una vez chequado todo, vamos a formula, preview, configurar, variables: poner en 0 y de ahí comenzar 
+
+![image](https://github.com/user-attachments/assets/3d649841-d0b8-4125-b2fc-8692f90a0394)
