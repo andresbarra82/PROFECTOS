@@ -25,3 +25,11 @@ Luego setear el valor de la contante con set field value:
 
 ![image](https://github.com/user-attachments/assets/ae03bdd6-5461-4a8b-a958-0eda5bfec440)
 
+Luego agregar un filtro, si el valor el id es -1
+
+![image](https://github.com/user-attachments/assets/a578a744-331c-480e-a02c-3eb4a2eb30a6)
+
+Luego se crea una constante nueva para ver cuando no se cumple la condicion
+
+![image](https://github.com/user-attachments/assets/ee6269a0-887a-4b2a-8b12-53a32700043f)
+
