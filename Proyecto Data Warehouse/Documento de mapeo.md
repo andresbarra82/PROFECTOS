@@ -22,8 +22,10 @@ Luego agregamos una constante para identificar si es un valor nuevo que hay que 
 ![image](https://github.com/user-attachments/assets/9a3dd4ea-4ab2-4f99-baca-954deff240c9)
 
 Luego setear el valor de la contante con set field value:
+- Field name: id_cliente, Replace by value from field: indicador_insert_update
 
-![image](https://github.com/user-attachments/assets/ae03bdd6-5461-4a8b-a958-0eda5bfec440)
+![image](https://github.com/user-attachments/assets/8141a301-0d8e-4093-9932-b7472c6a9c83)
+
 
 Luego agregar un filtro, si el valor el id es -1
 
