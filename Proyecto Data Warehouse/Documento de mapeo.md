@@ -53,3 +53,13 @@ se utiliza el metodo para que comienze el incremental: ${Max_registro}
 Una vez chequado todo, vamos a formula, preview, configurar, variables: poner en 0 y de ahí comenzar 
 
 ![image](https://github.com/user-attachments/assets/3d649841-d0b8-4125-b2fc-8692f90a0394)
+
+A la formula hay que agregarle:
+El nombre del nuevo campo: "id_calculado" \
+La formula: IF(([id_cliente]=-1); [max_cliente_id]; [id_cliente]) \
+y en Reemplazar valor: "max_cliente_id" para que tome el valor del campo calculado si es que el id_cliente era -1 es decir no existia. \
+![image](https://github.com/user-attachments/assets/14307522-9119-4fc9-be5c-fa9cef920007)
+
+
+
+
