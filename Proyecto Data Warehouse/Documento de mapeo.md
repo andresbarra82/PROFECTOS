@@ -1,4 +1,4 @@
-# Proceso de LookUp o "Búsqueda de Valor en Flujo" (Pnetrajo 10.2 Version Desarrollador)
+# Proceso de LookUp o "Búsqueda de Valor en Flujo" (Pentaho 10.2 Version Desarrollador)
 
 Ponemos de que campo a que campo queremos encontrar la coincidencia: en este caso: cod_cliente y codigo_cliente
 para traernos el ID y en el caso de que vengan en nulo le ponga un "-1" como valor. De esta manera se identifica que los valores son nuevos
